@@ -12,9 +12,7 @@ contract UpgradesScript is Script {
     function setUp() public {}
 
     function run() public {
-     
-        uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
-        vm.startBroadcast(deployerPrivateKey);
+        vm.startBroadcast();
 
         // Deploy `ContractA` as a transparent proxy using the Upgrades Plugin
         address transparentProxy =
