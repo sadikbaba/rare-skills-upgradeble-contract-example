@@ -9,4 +9,11 @@ ffi =true
 ast =true
 
 
+[etherscan]
+sepolia= { key = "${ETH_SEPOLIA_API}"}
+
+[rpc_endpoints]
+sepolia= "${RPC_URL_SEPOLIA}"
+
+
 # See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
